@@ -18,8 +18,7 @@ body {
 }
 nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     background-color: var(--mainColor);
     position: fixed;
     width: 100vw;
@@ -27,22 +26,28 @@ nav {
     min-height: 20px;
     z-index: 10;
 }
-nav a {
+nav > a {
     color: black;
     text-decoration: none;
     text-align: center;
     line-height: 7vh;
     height: 7vh;
     min-height: 20px;
-    width: 8vw;
-    min-width: 8vw;
+    max-width: calc(100/6)vw;
 }
-nav a:hover{
+nav > a:hover{
     animation: navAmin 0.3s ease-in-out 0s 1 normal forwards;
 }
 @keyframes navAmin {
     0% {background-color: orange;}
     100% {background-color: darkorange;}
+}
+.socialMedia {
+    align-self: center;
+}
+.socialMedia a{
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 .mainDiv {
     position: relative;
@@ -52,6 +57,7 @@ nav a:hover{
 }
 .mainDiv h1{ 
     position: absolute;
+    color: rgb(138, 62, 0);
     top: 40%;
     left: 10vw;
     font-size: 7vw;
@@ -69,10 +75,11 @@ main {
 main section{
    margin: 30px 50px;
    background-color: var(--sectioColor);
+   box-shadow: 10px 10px 20px black;
 }
 section h1{
     margin-left: 20px;
-    font-size: 2vw;
+    font-size: calc(12px + 1vw);
 }
 #omnie > *{
     margin-left: 20px;
@@ -93,14 +100,22 @@ form > *{
     min-height: 50px;
     min-width: 70px;
     margin-bottom: 10px;
+    background-color: var(--formColor);
+    border: 2px solid black;
+    border-radius: 10px;
 }
 input.inp{
     width: 400px;
     height: 40px;
     padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 textarea{ 
     width: 400px;
     height: 200px;
     padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    resize: none;
 }
