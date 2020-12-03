@@ -3,10 +3,12 @@
     --mainColor: orange;
     --maimColor2: darkorange;
     --sectioColor: rgb(255, 210, 61);
+    --formColor:  rgb(247, 255, 139);
 }
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     font-size: 1.2vw;
@@ -51,8 +53,14 @@ nav a:hover{
 .mainDiv h1{ 
     position: absolute;
     top: 40%;
-    left: 25%;
+    left: 10vw;
     font-size: 7vw;
+    animation: h1Anim 2s linear 0s infinite normal forwards;
+}
+@keyframes h1Anim {
+    0% { font-size: 7vw; }
+    50% { font-size: 8vw; }
+    100% { font-size: 7vw; }
 }
 main {
     display: flex;
@@ -64,7 +72,7 @@ main section{
 }
 section h1{
     margin-left: 20px;
-    font-size: 30px;
+    font-size: 2vw;
 }
 #omnie > *{
     margin-left: 20px;
@@ -73,28 +81,26 @@ form{
     display: flex;
     flex-direction: column;
 }
+form span {
+    font-weight: 700;
+}
 form > *{
     margin-left: 20px;
 }
 .formBtn > *{
-    height: 30px;
-    width: 100px;
+    height: 5vh;
+    width: 5vw;
+    min-height: 50px;
+    min-width: 70px;
     margin-bottom: 10px;
-    animation-name: btnAnim;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-@keyframes btnAnim {
-    0% { height: 30px; width: 100px; }
-    50% { height: 40px; width: 110px; }
-    100% { height: 30px; width: 100px; }
 }
 input.inp{
     width: 400px;
-    height: 30px;
+    height: 40px;
+    padding-left: 10px;
 }
 textarea{ 
     width: 400px;
-    height: 100px;
+    height: 200px;
+    padding: 10px;
 }
