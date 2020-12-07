@@ -11,15 +11,11 @@
     <body>
         <header id="stronaglowna">
             <nav>
-                <a href="#stronaglowna"><img src="home.png" style="height: 6vh;"></a>
+                <a href="#stronaglowna"><img src="home.png"></a>
                 <a href="#omnie">O mnie</a>
                 <a href="#umiejetnosci">Umiejętności</a>
                 <a href="#portfolio">Portfolio</a>
                 <a href="#kontakt">Kontakt</a>
-                <div class="socialMedia">
-                    <a href="https://www.facebook.com/profile.php?id=100008833035473" target="_blank"><img src="fb.png" style="height: 4vh;"></a>
-                    <a href="https://github.com/KajetanHarla01" target="_blank"><img src="github-logo.png" style="height: 4vh;"></a>
-                </div>
             </nav>
             <div class="mainDiv">
                 <img src="img.jpg"/>
@@ -31,7 +27,7 @@
                 <h1>O mnie</h1>
                 <div class="omnieCont">
                     <h2>Cześć!</h2>
-                    <img src="fb.png">
+                    <img src="photo.png">
                     <div class="omnieText">
                         <p>Nazywam się Kajetan Harla. Pochodzę z Zielonej Góry, ale obecnie mieszkam w Poznaniu. Jestem studentem pierwszego roku na Politechnice Poznańskiej.</p>
                         <br><p>Uczę się programowania już od gimnazjum. Przez te ostatnie kilka lat uczyłem się programować w C++, C#, Java. Ostatnio zacząłem
@@ -42,27 +38,43 @@
             </section>
             <section id="umiejetnosci">
                 <h1>Umiejętności</h1>
+
             </section>
             <section id="portfolio">
                 <h1>Portfolio</h1>
             </section>
             <section id="kontakt">
                 <h1>Kontakt</h1><br>
-                <form>
-                    <span>Imię i nazwisko: </span>
-                    <input type="text" class="inp" style="background-color: var(--formColor); font-family: 'Open Sans', sans-serif; font-weight: 700;"><br>
-                    <span>E-mail: </span>
-                    <input type="text" class="inp" style="background-color: var(--formColor); font-family: 'Open Sans', sans-serif; font-weight: 700;"><br>
-                    <span>Temat: </span>
-                    <input type="text" class="inp" style="background-color: var(--formColor); font-family: 'Open Sans', sans-serif; font-weight: 700;"><br>
-                    <span>Wiadomość: </span>
-                    <textarea style="background-color: var(--formColor); font-size: calc(12px + 0.5vw); font-family: 'Open Sans', sans-serif; font-weight: 700;"></textarea><br>
-                    <div class="formBtn">
-                        <input type="submit">
-                        <input type="reset">
+                <div class="kontaktDiv">
+                    <form>
+                        <span>Imię i nazwisko: </span>
+                        <input type="text" class="inp" style="background-color: var(--formColor); font-family: 'Open Sans', sans-serif; font-weight: 700;"><br>
+                        <span>E-mail: </span>
+                        <input type="text" class="inp" style="background-color: var(--formColor); font-family: 'Open Sans', sans-serif; font-weight: 700;"><br>
+                        <span>Temat: </span>
+                        <input type="text" class="inp" style="background-color: var(--formColor); font-family: 'Open Sans', sans-serif; font-weight: 700;"><br>
+                        <span>Wiadomość: </span>
+                        <textarea style="background-color: var(--formColor); font-size: calc(10px + 0.08vw); font-family: 'Open Sans', sans-serif; font-weight: 700;"></textarea><br>
+                        <div class="formBtn">
+                            <input type="submit" value="Prześlij">
+                            <input type="reset" value="Wyczyść">
+                        </div>
+                    </form>
+                    <div class="daneKontakt">
+                        <h1>Dane Kontaktowe</h1><br>
+                        <span>E-mail: kajetanharla01@gmail.com</span><br>
+                        <span>Tel.: 878 721 892</span><br>
+                        <span>Adres: Poznań ul. Krótka 4/2</span><br>
+                        <div class="socialMedia">
+                            <a href="https://www.facebook.com/profile.php?id=100008833035473" target="_blank"><img src="fb.png"></a>
+                            <a href="https://github.com/KajetanHarla01" target="_blank"><img src="github-logo.png"></a>
+                        </div>
                     </div>
-                </form>
+                </div>
             </section>
         </main>
+        <script>
+            console.log(window.innerHeight + " " + window.innerWidth);
+        </script>
     </body>
 </html>
