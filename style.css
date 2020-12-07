@@ -1,9 +1,10 @@
 :root {
-    --backgroud: wheat;
-    --mainColor: orange;
-    --maimColor2: darkorange;
-    --sectioColor: rgb(255, 210, 61);
-    --formColor:  rgb(247, 255, 139);
+    --backgroud: lightblue;
+    --mainColor: lightgreen;
+    --mainColor2: green;
+    --sectioColor: rgb(94, 189, 77);
+    --formColor:  rgb(143, 255, 139);
+    --h1MainColor: darkgreen;
 }
 *{
     margin: 0;
@@ -39,8 +40,8 @@ nav > a:hover{
     animation: navAmin 0.3s ease-in-out 0s 1 normal forwards;
 }
 @keyframes navAmin {
-    0% {background-color: orange;}
-    100% {background-color: darkorange;}
+    0% {background-color: var(--mainColor);}
+    100% {background-color: var(--mainColor2);}
 }
 .socialMedia {
     align-self: center;
@@ -57,7 +58,7 @@ nav > a:hover{
 }
 .mainDiv h1{ 
     position: absolute;
-    color: rgb(138, 62, 0);
+    color: var(--h1MainColor);
     top: 40%;
     left: 10vw;
     font-size: 7vw;
@@ -81,8 +82,27 @@ section h1{
     margin-left: 20px;
     font-size: calc(12px + 1vw);
 }
+.omnieCont {
+    display: grid;
+    padding: 20px;
+    grid-gap: 30px;
+    grid-template-columns: repeat(autofit, minmax(100px,400px));
+    grid-row: repeat(autofit, minmax(100px,400px));
+}
+.omnieCont h2 {
+    grid-row: 1;
+    grid-column: 2/4;
+}
+.omnieCont .omnieText {
+    grid-row: 2/4;
+    grid-column: 2/span 2;
+}
+.omnieCont img {
+    grid-row: 1/4;
+    grid-column: 1;
+}
 #omnie > *{
-    margin-left: 20px;
+    margin: 20px;
 }
 form{
     display: flex;
@@ -106,6 +126,7 @@ form > *{
 }
 input.inp{
     width: 400px;
+    max-width: 100%;
     height: 40px;
     padding-left: 10px;
     border-radius: 5px;
