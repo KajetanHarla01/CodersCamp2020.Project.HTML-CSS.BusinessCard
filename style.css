@@ -11,7 +11,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-@media screen and (min-width: 750px){
+@media screen and (min-width: 300px){
     body {
         font-size: calc(12px + 0.5vw);
         color: black;
